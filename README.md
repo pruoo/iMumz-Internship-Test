@@ -23,5 +23,6 @@ For the coding task, you can navigate to the `coding_tasks` folder, and run `flu
 3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
 
 ## Coding Task
-1. Convert the components in "designs" folder to UI code files in "lib" folder. Use images from "assets" folder. For fonts, use the Google Fonts package with nunito font. You can create an empty 
+1. Convert the components in "designs" folder to UI code files in "lib" folder. Use images from "assets" folder. For fonts, use the Google Fonts package with nunito font. This code will reside in `your_full_name/coding_tasks` and must include a `screenshots` folder to visualize the output.
+Additional Info : Colors used { FFFBF3, 7BCEBC, C1EBE1, 000000, FFFFFF}
     
