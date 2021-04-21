@@ -4,8 +4,5 @@ A) Add file to "technical" folder
 2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
 A) 
 
-3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
-A) 
-
-4. When/Where do you usually encounter bugs in your development process?
+3. When/Where do you usually encounter bugs in your development process?
 A) 

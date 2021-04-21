@@ -13,8 +13,7 @@ For the coding task, you can navigate to the `coding_tasks` folder, and run `flu
 ## Technical Questions
 1. Attach a pubspec.yaml file from one of your past flutter projects.
 2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
-3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
-4. When/Where do you usually encounter bugs in your development process?
+3. When/Where do you usually encounter bugs in your development process?
 
 ## Non-Technical Questions
 1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
