@@ -1,0 +1,13 @@
+1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
+A) Flutter has a growing community of developers, and there are plenty of resources.
+My personal resources are mostly Reso-Coder, Flutter Channels on Medium, and sometimes Tadas Petra's discord Server
+
+2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
+A) VS Code with with tools like "Pubspec Assist", "Dart Import", etc.
+Currently using the "Abyss" theme.
+
+3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
+A) While approaching responsiveness, the key is to breakdown the UI into smaller components.
+Giving fixed constraints is one of the worst approaches to this and hence, I tend to define the constraints
+using the Screen Width/ Screen Height. Use of MediaQueries, LayoutBuilder and other non-bounded widgets such as
+Expanded and Flexible is my goto approach.

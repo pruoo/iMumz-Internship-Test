@@ -1,0 +1,18 @@
+1. Attach a pubspec.yaml file from one of your past flutter projects.
+A) Add file to "technical" folder
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
+A) State Management in a layman's language means to manage the "State" of data shown on the screen. In any framework, the key is to
+seperate the UI from the Business Logic, so as to facilitate accessibilty of "state variables". There could be various approaches to State Management - 
+Bloc, Provider, Riverpod, and my personal favorite - Get, allow us to manage the "state" efficiently, by segregating our Logic from the Frontend.
+
+3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
+A) While approaching responsiveness, the key is to breakdown the UI into smaller components.
+Giving fixed constraints is one of the worst approaches to this and hence, I tend to define the constraints
+using the Screen Width/ Screen Height. Use of MediaQueries, LayoutBuilder and other non-bounded widgets such as
+Expanded and Flexible is my goto approach.
+
+4. When/Where do you usually encounter bugs in your development process?
+A) As a developer, the most critical areas where I encounter bugs is when working with
+asynchronous data. Due to the nature of the data received, it is very essential to test such APIs on Postman, before usage.
+Apart from asynchronous data, package versioning issues also arise from time-to-time. 
