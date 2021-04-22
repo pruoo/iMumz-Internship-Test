@@ -1,4 +1,5 @@
 import 'package:coding_task/widgets/masterclass.dart';
+import 'package:coding_task/widgets/yoga.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
@@ -27,11 +28,32 @@ class MyApp extends StatelessWidget {
                   var height = constraints.maxHeight;
                   var width = constraints.maxWidth;
                   if (width > 600)
-                    return Text("data");
+                    return Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        masterclassCard(
+                          height: height,
+                          width: width,
+                        ),
+                        yoga(
+                          height: height,
+                          width: width,
+                        )
+                      ],
+                    );
                   else
-                    return masterclassCard(
-                      width: width,
-                      height: height,
+                    return Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        masterclassCard(
+                          height: height,
+                          width: width,
+                        ),
+                        yoga(
+                          height: height,
+                          width: width,
+                        )
+                      ],
                     );
                 },
               ),
