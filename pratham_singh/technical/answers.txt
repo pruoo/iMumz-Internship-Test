@@ -1,0 +1,19 @@
+1. Attach a pubspec.yaml file from one of your past flutter projects.
+A) Add file to "technical" folder
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
+A) To define State Management in Flutter, let us first define what State means.
+For the purpose of this question, let us say that State is the value of the variables being used in an app.
+Now let us assume that there is an app which has two modes: Light and Dark, which depends on the variable 'bool darkModeOn'.
+Initially, darkModeOn = false. Here, the state of the app is Light. If we change darkModeOn to true, this changes the state of the app to Dark.
+In Flutter, an app is made up of a tree of widgets. To change the state of the app means to make changes to a widget or to multiple widgets in the widget tree.
+State Management is the process of implementing these changes and making them visible in the app.
+In our example, say, a widget deep inside the widget tree can trigger a change in darkModeOn. This will change the value of the variable for that particular widget, but what about changing the mode (state of other widgets) of the app.
+This is where State Management comes in. Using different State Management techniques (setState(), callbacks, Bloc, etc.), we can make changes to the state of any widget in the widget tree.
+For instance, we can use the Provider widget at the top of the tree to provide the value of darkModeOn to the tree and make other widgets listen to the changes made to the variable.
+As soon as darkModeOn changes (no matter where the change is triggered in the tree), its listeners can rebuild themselves accordingly, thus changing the app's state.
+
+3. When/Where do you usually encounter bugs in your development process?
+A) I usually encounter bugs in Flutter when I am coding a complex UI. The most common error I face is 'A RenderFlex overflowed by ... pixels'.
+It only requires some tweaking with the code and it gets fixed.
+Another place that I encounter bugs are when I have to manage state. It mostly happens when the application is not developed as planned and requires changes later.
