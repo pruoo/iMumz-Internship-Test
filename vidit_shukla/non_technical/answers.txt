@@ -1,0 +1,17 @@
+1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
+A) Mostly I stay updated about Flutter throught the discord serve of FlutterDev and Codepur, and through various live sessions conducted by 
+Flutter team on youtube which makes me aware about the various latest features in Flutter.Besides this, I follow Pawan Kumar, which also keeps me updated.
+
+2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
+A)
+My Most used keyboard shortcut is ctrl+shift+R , which helps me to extract any wiget from code and to wrap any widget into 
+any other widget, which helps me in efficient as well as faster coding.
+My second most used shortcut is shift+alt+F , which helps me to refactor the code, as every page in flutter is a widget tree
+it makes extremely easy to navigate to any widget from the refactored code.
+
+3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
+A) 
+ I use MediaQuery and Aspect Ratio, MediaQuery to get the on screen width and height of screen as well as the orientation 
+ of the screen and then use Aspect Ratio to achieve my desired resolution for any widget in order to achieve responsiveness and I try to use
+ as many responsive widget as possible while coding to increase my command on responsivess. I also use expand and flexible commands
+ to make the children of rows and column fit in available space.
