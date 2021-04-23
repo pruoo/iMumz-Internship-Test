@@ -126,23 +126,21 @@ class MindfulCard extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
-                    height: 24,
-                  ),
+                  // SizedBox(
+                  //   height: 14,
+                  // ),
 
                   //padding: const EdgeInsets.only(left: 10.0),
                   Stack(
                     children: [
-                      SizedBox(
-                        height: 2,
-                      ),
                       RichText(
                         text: TextSpan(children: <TextSpan>[
                           TextSpan(
-                            text: "Exclusively for ",
+                            text: "\nExclusively for ",
                             style: GoogleFonts.nunito(
                               color: Color(0xff000000),
                               fontSize: 10,
+                              height: 1,
                             ),
                           ),
                           TextSpan(
@@ -151,13 +149,14 @@ class MindfulCard extends StatelessWidget {
                               color: Color(0xff000000),
                               fontSize: 10,
                               fontWeight: FontWeight.bold,
+                              height: 1,
                             ),
                           ),
                         ]),
                       ),
                       Positioned(
-                        right: 2,
-                        top: -2,
+                        right: 1.2,
+                        top: 10.5,
                         child: Container(
                           height: 9,
                           child: Image.asset('images/tilted-crown-icon.png'),

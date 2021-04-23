@@ -77,7 +77,7 @@ class TrimesterCard extends StatelessWidget {
                             ],
                           ),
                           SizedBox(
-                            height: 40,
+                            height: 25,
                           ),
                           Stack(
                             children: [
@@ -87,7 +87,7 @@ class TrimesterCard extends StatelessWidget {
                               RichText(
                                 text: TextSpan(children: <TextSpan>[
                                   TextSpan(
-                                    text: "Exclusively for ",
+                                    text: "\nExclusively for ",
                                     style: GoogleFonts.nunito(
                                       color: Color(0xff000000),
                                       fontSize: 8.8,
@@ -104,8 +104,8 @@ class TrimesterCard extends StatelessWidget {
                                 ]),
                               ),
                               Positioned(
-                                right: 0,
-                                top: -2,
+                                right: 0.7,
+                                top: 11,
                                 child: Container(
                                   height: 9,
                                   child: Image.asset(

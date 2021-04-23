@@ -1,0 +1,11 @@
+1. Attach a pubspec.yaml file from one of your past flutter projects.
+A) Added file to the "technical" folder
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
+A) In Flutter App Development, State Mangement literaly means to manage the state i.e. the Data which affects the UI of the Application and might change during the runtime of the app. 
+There are basicically two types of state management 
+    One is the Local State Management i.e when we need to change the data locally on a single screen and not throughout the app, in this I simply use the combination Stateful Widget and setState(), one of the example can be a simple calculator app.
+    Other one is App State Management i.e when we need to change the data that is shared across many screens of the app, we can use Provider State Management, Streams and BLoC Package depending upon the problem, I mostly use Provider State Management as it solves most of my problems.
+
+3. When/Where do you usually encounter bugs in your development process?
+A) I usually encounter bugs while dealing Future and async functions and sometimes I also forgot to handle the errors during API call or while connecting it to the database. 
