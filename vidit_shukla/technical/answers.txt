@@ -1,0 +1,36 @@
+1. Attach a pubspec.yaml file from one of your past flutter projects.
+A) Add file to "technical" folder
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
+A) 
+For the term 'State Management', firstly let me tell about 'State', basically it is the local data, a widget can hold after
+it has been rendered. If one has to change the state of widget he has to update the setState() function of the widget(in stateful ones)
+Basically there are 2 types of widgets, stateless and statefull .
+The stateless widget does not have any internal state i.e. it built once only and no dynamic changes is possible in its state.
+The statefull widget is dynamic and has a setState() function which is modified for modifying the state of widget.
+
+Now lets take an example to understand why state management is very important,
+lets say, there is a coding contest going on in which various users are making their submissions and viewing the ranklist in order to
+see their respective ranks at that moment, so as the users are solving the question their rank changes and it should be updated in
+in the ranklist dynamically in order to be updated. So basically this is a state which is changing dynamically and it should be managed efficiently
+in order to achieve good performance.So like this 'state management' comes into picture.
+In flutter state management is of 2 types:
+
+1) Ephemeral State
+2)App state
+
+1) It is a state that contains in a single widget, so in this type of state one does not needs to use state management techniques.
+for example, a counter button.
+
+2) It is a state, which is related to various widgets i.e., it is the state which we want to share to various parts in our app and
+want to keep between user sessions, hence can be used globally. For example: Login information, notifications of an app.
+For this type of state, we manage it in flutter by using various techniques such as by using provider package, a third party library.
+
+
+3. When/Where do you usually encounter bugs in your development process?
+A)
+1)I face bugs as I forget exception handling during the implementation of an http request.
+2)I sometimes forget about checking whether the data has been arrived by streamBuilder/FutureBuilder,
+which results in a null value error for some time when the screen loads. 
+3)I sometimes face difficulty while handling overflow error, where I have to think to adjust the widgets in the available size,
+such that it fits best for different resolutions. 
