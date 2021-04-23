@@ -13,16 +13,24 @@ class MyApp extends StatelessWidget {
       title: 'iMumzInternship',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.blueAccent,
         appBar: AppBar(
-          title: Text('iMumzInternship - Chirag'),
+          elevation: 0,
+          backgroundColor: Color(0xFF7BCEBC),
+          title: Center(child: Text('iMumzInternship - Chirag Mathur')),
         ),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              MindfulCard(),
-              TrimesterCard(),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                MindfulCard(),
+                SizedBox(
+                  height: 50,
+                ),
+                TrimesterCard(),
+              ],
+            ),
           ),
         ),
       ),

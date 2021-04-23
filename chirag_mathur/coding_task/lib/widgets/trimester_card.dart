@@ -109,7 +109,7 @@ class TrimesterCard extends StatelessWidget {
                                 child: Container(
                                   height: 9,
                                   child: Image.asset(
-                                      'images/tilted-crown-icon.png'),
+                                      'assets/images/tilted-crown-icon.png'),
                                 ),
                               ),
                             ],
@@ -127,7 +127,8 @@ class TrimesterCard extends StatelessWidget {
                                 const EdgeInsets.only(left: 10.0, bottom: 5.0),
                             child: Container(
                               height: 106,
-                              child: Image.asset('images/meditating-woman.png'),
+                              child: Image.asset(
+                                  'assets/images/meditating-woman.png'),
                             ),
                           ),
                           Container(

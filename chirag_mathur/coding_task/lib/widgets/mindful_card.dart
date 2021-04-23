@@ -47,7 +47,8 @@ class MindfulCard extends StatelessWidget {
                                 ),
                                 Container(
                                   height: 150,
-                                  child: Image.asset('images/doctor-image.png'),
+                                  child: Image.asset(
+                                      'assets/images/doctor-image.png'),
                                 )
                               ],
                             ),
@@ -159,7 +160,8 @@ class MindfulCard extends StatelessWidget {
                         top: 10.5,
                         child: Container(
                           height: 9,
-                          child: Image.asset('images/tilted-crown-icon.png'),
+                          child: Image.asset(
+                              'assets/images/tilted-crown-icon.png'),
                         ),
                       ),
                     ],
