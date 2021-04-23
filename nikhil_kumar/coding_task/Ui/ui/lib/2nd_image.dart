@@ -1,25 +1,4 @@
-1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
-A) There is many way like i regulary follow fuller.dev website to get new documentation and updates 
-    and many discord channels who help me like mteckviral and You tube channels i also prefer there is always all
-    type of things and some channels who is directly run flutter community. 
-
-2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
-A)Some of most used shortcut keys :-
-   Ctrl+Space    ->    to code completion.
-   ctrl+.        ->   it quick fixes the code.
-   stless and stful ->  for stateless and statefull  
-and i use command line for flutter run some
-   r     -> reload
-   R     -> restart
-   q     -> quit
-
-3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
-A)By using some tools like mediaquery.of,aspect ratio,Lyout Builder.
-  I mainly go from big to small components like first of outer container, 
-  then inner,and then its components 
-
-
-
+import 'package:flutter/material.dart';
 
 class MyHomeNextPage extends StatelessWidget {
   @override
@@ -170,5 +149,3 @@ class MyHomeNextPage extends StatelessWidget {
     );
   }
 }
-
-
