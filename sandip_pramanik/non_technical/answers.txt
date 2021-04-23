@@ -1,0 +1,77 @@
+1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
+
+A) I follow the Flutter Team @FlutterDev (Twitter) for latest news, features, upcoming events. 
+   Medium articles also provide some best blogs and contents on different topics and scenarios.
+   Also I try to attend live events from the team on YouTube. Sometimes, I also go through some discussions
+   on Reddit.
+
+
+2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
+
+A) Most used IDE => VSCode
+   Most used keyboard shortcuts => Ctrl+Space (Shows suggestions), Shift+Alt+F (for formatting ), F2 for renaming,
+                                   Also, Ctrl + . (Quick Fix), Alt+Shift+o (Remove unused import), F5 (Debugging)
+
+
+3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
+
+A) Flutter provides some basic approaches towards responsiveness of the screen UI with MediaQuery.of(), LayoutBuilder(), OrientationBuilder().
+   MediaQuery.of() provides screen size (width and height)
+   LayoutBuilder() provides BoxContraints values (maxWidth and maxHeight)
+   OrientationBuilder() provides the orientation of the device. 
+
+   Also Flutter provides some widgets out of the box to help building responsive UI. For example FittedBox, AspectRatio, FractionallySizedBox etc.
+   There is also a library/package responsive_framework (https://pub.dev/packages/responsive_framework) that auto scales or resizes the UI depending upon
+   Responsive Breakpoint.
+
+   But if we want to implement different layouts (responsive & adaptive) for different screen size, we can create our own custom widgets. A code snippet for that:
+
+   ``` responsive.dart
+   enum ScreenSize { small, medium, large }
+
+   const _breakpoint1 = 600.0;
+   const _breakpoint2 = 840.0;
+   
+   ScreenSize getScreenSize(double width) {
+     if (width < _breakpoint1) {
+       return ScreenSize.small;
+     } else if (width >= _breakpoint1 && width <= _breakpoint2) {
+       return ScreenSize.medium;
+     } else {
+       return ScreenSize.large;
+     }
+   }
+   ```
+
+   And then we can create a class that checks the ScreenSize and returns specific widget:
+
+   ```responsive_wrapper.dart
+   class ResponsiveWrapper extends StatelessWidget {
+     const ResponsiveWrapper({
+       Key key,
+       @required this.largeWidget,
+       this.mediumWidget,
+       this.smallWidget,
+     }) : super(key: key);
+     final Widget largeWidget;
+     final Widget mediumWidget;
+     final Widget smallWidget;
+   
+     @override
+     Widget build(BuildContext context) {
+       switch (getScreenSize(MediaQuery.of(context).size.width)) {
+         case ScreenSize.large:
+           return largeWidget;
+           break;
+         case ScreenSize.medium:
+           return mediumWidget ?? largeWidget;
+           break;
+         case ScreenSize.small:
+           return smallWidget ?? largeWidget;
+           break;
+         default:
+           return largeWidget;
+           break;
+       }
+     }
+   }
