@@ -1,8 +1,14 @@
 1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
-A) 
+A) Medium articles is the main source of most information as I am in a habit of regularly reading articles about flutter and other developement tools. I always try to be regular about watching 'widget of the week' and other similar videos on official Flutter YouTube channel. I am a part of student group of our college as well as few others on slack and discord where we discuss latest releases, issues we face while developing and more. Recently with the release of stable web version, I have been making time to read articles on medium and watch related videos from various developers on YouTube as well as read the docs and practice.
 
 2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
-A) 
+A) My most used IDE is VsCode.
+Shortcuts used:
+Ctrl + l for selecting a line
+Ctrl + F5 for debugging
+Ctrl + / for commenting
+Alt + Shift + o for removing unused imports 
+Ctrl + g to go to a particular line
 
 3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
 A) 

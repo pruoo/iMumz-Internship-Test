@@ -26,7 +26,7 @@ class bottomLine extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(bottom: 5),
+            margin: EdgeInsets.only(bottom: 9),
             child: Image(
               image: AssetImage("static_assets/tilted-crown-icon.png"),
               height: width * 0.02,

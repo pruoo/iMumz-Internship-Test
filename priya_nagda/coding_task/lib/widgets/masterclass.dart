@@ -10,8 +10,11 @@ class masterclassCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(15),
-      height: height * 0.42,
+      padding: EdgeInsets.symmetric(
+        horizontal: 15,
+        vertical: 25,
+      ),
+      height: height * 0.5,
       width: width * 0.95,
       decoration: BoxDecoration(
         color: Theme.of(context).primaryColor,
@@ -20,7 +23,7 @@ class masterclassCard extends StatelessWidget {
         ),
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,

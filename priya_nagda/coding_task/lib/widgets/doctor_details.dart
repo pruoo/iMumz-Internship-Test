@@ -17,13 +17,12 @@ class doctor_details extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Stack(
-          alignment: Alignment.center,
           children: [
             Container(
-              margin: EdgeInsets.only(top: 15),
+              margin: EdgeInsets.only(top: 20),
               alignment: Alignment.bottomCenter,
               height: width * 0.3,
               width: width * 0.3,
@@ -33,7 +32,6 @@ class doctor_details extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 10),
               child: Image(
                 image: AssetImage("static_assets/" + image),
                 height: width * 0.4,
@@ -41,26 +39,36 @@ class doctor_details extends StatelessWidget {
             ),
           ],
         ),
-        Container(
-          margin: EdgeInsets.only(top: 5),
-          padding: EdgeInsets.symmetric(
-            horizontal: 10,
-          ),
-          color: color_for_name,
-          child: Text(
-            "Dr. " + name,
-            style: TextStyle(
-              fontSize: width * 0.033,
-              fontWeight: FontWeight.bold,
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              margin: EdgeInsets.only(top: 5),
+              padding: EdgeInsets.symmetric(
+                horizontal: 10,
+              ),
+              color: color_for_name,
+              child: Text(
+                "Dr. " + name,
+                style: TextStyle(
+                  fontSize: width * 0.033,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
-          ),
-        ),
-        Text(
-          field,
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: width * 0.025,
-          ),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 10,
+              ),
+              child: Text(
+                field,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: width * 0.025,
+                ),
+              ),
+            ),
+          ],
         )
       ],
     );

@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
           body: SafeArea(
             child: Container(
               alignment: Alignment.topCenter,
+              padding: EdgeInsets.all(10),
               child: LayoutBuilder(
                 builder: (context, constraints) {
                   var height = constraints.maxHeight;
