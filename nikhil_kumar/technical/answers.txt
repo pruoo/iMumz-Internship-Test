@@ -1,0 +1,16 @@
+1. Attach a pubspec.yaml file from one of your past flutter projects.
+A) Add file to "technical" folder
+   I have added my "chromser folder" pubsec file which is named as "link and library" repository in my github.
+
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
+A) State Management in flutter  in my words is to manage and change(ui,working,everthing)in each states and after 
+   screen is get rendered than a new state is reached and how it should look and work ,to manage all these 
+   states is state management ie, in one of my projet i have done like everyone is google sign in we can see who is online,
+   and who is offline.  
+
+3. When/Where do you usually encounter bugs in your development process?
+A) The most common bugs that almost everytime come is renderflex because many times its pixels gets overflowed
+   and when i am working with firebase the most bugs is with data received or not some time due to single word 
+   whole bug was there and then usuall bug is when we are passing data from one class to another(some times 
+   stateful ,sometimes stateless). 
