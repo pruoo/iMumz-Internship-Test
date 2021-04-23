@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:coding_task/widgets/doctor_details.dart';
 import 'package:coding_task/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class masterclassCard extends StatelessWidget {
   var height;
@@ -46,7 +47,7 @@ class masterclassCard extends StatelessWidget {
                   ),
                   Text(
                     "Mindful\nPregnancy\nMasterclass",
-                    style: TextStyle(
+                    style: GoogleFonts.nunito(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
                       fontSize: width * 0.06,
