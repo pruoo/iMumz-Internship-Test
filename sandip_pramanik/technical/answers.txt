@@ -1,0 +1,21 @@
+1. Attach a pubspec.yaml file from one of your past flutter projects.
+
+A) Add file to "technical" folder => Added
+
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
+
+A) State is basically how the User Interface of the app feels/behaves at a particular moment. It holds the data
+   that are needed in order to render the UI. And whenever we change/set the state the build() function is triggered,
+   resulting in the re-rendering of the User Interface. Now there are different way how we can manage the state or 
+   how we can transform the state into UI. For local state, we generally use setState(), but for global state we use something
+   like InheritedWidget() or ChangeNotifier/ValueNotifier. And these techniques require much more boilerplate code, thats why
+   several state management libraries have been introduced, each of them having their own pros and cons. 
+
+
+3. When/Where do you usually encounter bugs in your development process?
+
+A) Mostly when I forget to check if the data fetched from local cache or remote database is null.
+   And when not catching the exceptions with try-catch block, the unhandled exceptions sometimes cause bugs.
+   The `type error` sometimes becomes error-prone when not specifying data types in the fromJson() method, i.e., final int accuracy = data['accuracy'] as int .
+   Also `asynchronous suspension`, `the getter was called on null`, `RangeError: Index out of range` these are some common errors I face quite often.

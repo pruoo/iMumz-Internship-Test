@@ -1,0 +1,55 @@
+name: inferno
+description: A new Flutter application.
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  # Better Code Reusability
+  flutter_hooks: ^0.16.0
+  # OS Specific widgets 
+  flutter_platform_widgets: ^1.1.0
+  # Annotation for feezed
+  freezed_annotation: ^0.14.1
+  # Local Cache
+  hive: ^2.0.2
+  hive_flutter: ^1.0.0
+  # State management 
+  hooks_riverpod: ^0.14.0+1
+  # Parsing date time
+  intl: ^0.17.0
+  # Code generator for JSON conversion
+  json_serializable: ^4.1.0
+  # OS specific file path
+  path_provider: ^2.0.1
+  # Firebase API
+  firebase_core: ^1.0.4
+  firebase_auth: ^1.1.1
+  google_sign_in: ^5.0.2
+  cloud_firestore: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Code generator
+  build_runner: ^1.12.2
+  # Code generator for immutable classes
+  freezed: ^0.14.1+2
+  # Code generator for hive
+  hive_generator: ^1.0.1
+  # Configure linting rules
+  lint: ^1.5.3
+
+flutter:
+  uses-material-design: true
+
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
