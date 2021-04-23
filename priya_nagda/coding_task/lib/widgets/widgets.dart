@@ -8,6 +8,7 @@ class bottomLine extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Text(
             "Exclusively for ",

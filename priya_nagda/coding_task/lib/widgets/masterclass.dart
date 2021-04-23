@@ -1,9 +1,7 @@
 import 'dart:ui';
-
 import 'package:coding_task/widgets/doctor_details.dart';
 import 'package:coding_task/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class masterclassCard extends StatelessWidget {
   var height;
@@ -22,10 +20,11 @@ class masterclassCard extends StatelessWidget {
         ),
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               doctor_details(
                 height: height,

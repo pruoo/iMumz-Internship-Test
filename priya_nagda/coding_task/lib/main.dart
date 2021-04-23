@@ -27,34 +27,53 @@ class MyApp extends StatelessWidget {
                 builder: (context, constraints) {
                   var height = constraints.maxHeight;
                   var width = constraints.maxWidth;
-                  if (width > 600)
+                  if (width > 728)
                     return Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         masterclassCard(
-                          height: height,
-                          width: width,
+                          height: 600,
+                          width: 400,
                         ),
                         yoga(
-                          height: height,
-                          width: width,
+                          height: 600,
+                          width: 365,
                         )
                       ],
                     );
-                  else
-                    return Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  else if (height > width)
+                    return ListView(
                       children: [
                         masterclassCard(
                           height: height,
                           width: width,
                         ),
+                        SizedBox(
+                          height: 15,
+                        ),
                         yoga(
                           height: height,
                           width: width,
                         )
                       ],
                     );
+                  else {
+                    return ListView(
+                      children: [
+                        masterclassCard(
+                          height: 600,
+                          width: 400,
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        yoga(
+                          height: 600,
+                          width: 365,
+                        )
+                      ],
+                    );
+                  }
                 },
               ),
             ),

@@ -23,17 +23,17 @@ class doctor_details extends StatelessWidget {
           alignment: Alignment.center,
           children: [
             Container(
-              margin: EdgeInsets.only(top: 15, right: 5),
+              margin: EdgeInsets.only(top: 15),
               alignment: Alignment.bottomCenter,
-              height: width * 0.35,
-              width: width * 0.38,
+              height: width * 0.3,
+              width: width * 0.3,
               decoration: BoxDecoration(
                 color: Theme.of(context).primaryColorLight,
                 shape: BoxShape.circle,
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 16),
+              margin: EdgeInsets.only(left: 10),
               child: Image(
                 image: AssetImage("static_assets/" + image),
                 height: width * 0.4,
@@ -50,7 +50,6 @@ class doctor_details extends StatelessWidget {
           child: Text(
             "Dr. " + name,
             style: TextStyle(
-              // backgroundColor: Theme.of(context).primaryColorLight,
               fontSize: width * 0.033,
               fontWeight: FontWeight.bold,
             ),

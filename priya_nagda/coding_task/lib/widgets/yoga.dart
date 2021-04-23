@@ -12,7 +12,7 @@ class yoga extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+      padding: EdgeInsets.symmetric(horizontal: 18, vertical: 20),
       height: height * 0.37,
       width: width * 0.95,
       decoration: BoxDecoration(
@@ -22,77 +22,77 @@ class yoga extends StatelessWidget {
         ),
       ),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                  margin: EdgeInsets.only(top: 25),
-                  width: width * 0.48,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(3.0),
-                        child: Text(
-                          "Yoga in the third trimester",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: width * 0.06,
-                            height: 0.95,
+                margin: EdgeInsets.only(top: 25),
+                width: width * 0.48,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(3.0),
+                      child: Text(
+                        "Yoga in the third trimester",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: width * 0.06,
+                          height: 0.95,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(3.0),
+                      child: Text(
+                        "For your baby's development",
+                        style: TextStyle(
+                          fontSize: width * 0.03,
+                        ),
+                        textAlign: TextAlign.start,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 15.0,
+                        horizontal: 3,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            "07 April ",
+                            style: TextStyle(
+                              fontSize: width * 0.035,
+                              fontWeight: FontWeight.w900,
+                            ),
                           ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(3.0),
-                        child: Text(
-                          "For your baby's development",
-                          style: TextStyle(
-                            fontSize: width * 0.03,
+                          Container(
+                            height: width * 0.015,
+                            width: width * 0.015,
+                            decoration: BoxDecoration(
+                              color: Theme.of(context).accentColor,
+                              shape: BoxShape.circle,
+                            ),
                           ),
-                          textAlign: TextAlign.start,
-                        ),
+                          Text(
+                            " 04:30pm-05:30pm",
+                            style: TextStyle(
+                              fontSize: width * 0.035,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 15.0,
-                          horizontal: 3,
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Text(
-                              "07 April ",
-                              style: TextStyle(
-                                fontSize: width * 0.035,
-                                fontWeight: FontWeight.w900,
-                              ),
-                            ),
-                            Container(
-                              height: width * 0.015,
-                              width: width * 0.015,
-                              decoration: BoxDecoration(
-                                color: Theme.of(context).accentColor,
-                                shape: BoxShape.circle,
-                              ),
-                            ),
-                            Text(
-                              " 04:30pm-05:30pm",
-                              style: TextStyle(
-                                fontSize: width * 0.035,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  )),
-              // SizedBox(
-              //   height: width * 0.08,
-              // ),
+                    ),
+                  ],
+                ),
+              ),
               bottomLine(
                 height: height,
                 width: width,
