@@ -1,0 +1,10 @@
+1. Attach a pubspec.yaml file from one of your past flutter projects.
+A) Add file to "technical" folder
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
+A) State Management is what would help make the app dynamic along with stateful widgets. Suppose you are having a app with user interaction like when user adds something to an already existing list (todo lists, shopping carts, etc) it should be reflected when the users hits enter, that is the widget containing/displaying the list should be automatically refreshed and the added item should be displayed too.
+There can be two states, one Ephemeral/local state, where changes are to be reflected on the same screen/ widget where we can use setstate function in stateful widget to achieve that. 
+Whereas there is app state too, where you share data accross different scrrens/widgets of the app. This can be achieved using provider package.
+
+3. When/Where do you usually encounter bugs in your development process?
+A) Most bugs are encountered during async function calls. I have recently been trying to integrate text to speech and vice versa(multilingual) in my apps, where I face many issues too.

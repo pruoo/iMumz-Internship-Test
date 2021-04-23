@@ -1,0 +1,77 @@
+1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
+A) Medium articles is the main source of most information as I am in a habit of regularly reading articles about flutter and other developement tools. I always try to be regular about watching 'widget of the week' and other similar videos on official Flutter YouTube channel. I am a part of student group of our college as well as few others on slack and discord where we discuss latest releases, issues we face while developing and more. Recently with the release of stable web version, I have been making time to read articles on medium and watch related videos from various developers on YouTube as well as read the docs and practice.
+
+2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
+A) My most used IDE is VsCode.
+Shortcuts used:
+Ctrl + l for selecting a line
+Ctrl + F5 for debugging
+Ctrl + / for commenting
+Alt + Shift + o for removing unused imports 
+Ctrl + g to go to a particular line
+
+3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
+A) I personally use the LayoutBuilder class for its boxconstraints object and instead of providing fixed heights and font sizes to widgets of the screen, I generally use the contraints of the user's phone screen (max height and width) and give relative sizes to the widgets. This makes sure that the widgets don't overflow on different device sizes and also the content of the App/UI doesn't look too huge or too small on a particular device.
+
+The following code checks the device's width, if the width is greater than a specified value (in this case 728 which is generally for desktops and landscape orientation of tablets),the display will change accordinly. Hence this piece of code works for both desktop and mobile phones.
+
+LayoutBuilder(
+    builder: (context, constraints) {
+        var height = constraints.maxHeight;
+        var width = constraints.maxWidth;
+        if (width > 728)
+        return Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+            masterclassCard(
+                height: 600,
+                width: 400,
+            ),
+            yoga(
+                height: 600,
+                width: 365,
+            )
+            ],
+        );
+        else if 
+        return ListView(
+            children: [
+            masterclassCard(
+                height: height,
+                width: width,
+            ),
+            SizedBox(
+                height: 15,
+            ),
+            yoga(
+                height: height,
+                width: width,
+            )
+            ],
+        ),
+        }
+    },
+    ),
+
+Similarly, using the width and height of device to specify the constraints of the widgets.
+
+Stack(
+    children: [
+    Container(
+        margin: EdgeInsets.only(top: 20),
+        alignment: Alignment.bottomCenter,
+        height: width * 0.3,
+        width: width * 0.3,
+        decoration: BoxDecoration(
+        color: Theme.of(context).primaryColorLight,
+        shape: BoxShape.circle,
+        ),
+    ),
+    Container(
+        child: Image(
+        image: AssetImage("static_assets/" + image),
+        height: width * 0.4,
+        ),
+    ),
+    ],
+),
