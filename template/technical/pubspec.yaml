@@ -1,0 +1,74 @@
+name: srms_owner_app
+description: Study Room Management System ( S.R.M.S. ). This is a Flutter based
+  project to solve the issue of manual labour and storing of data in real life
+  registers as Records. To reduce the burden of the Employers and the ease of
+  mantainability of the Records as well as Audits. We at P2L Learing Empowers
+  Pvt. Ltd. has taken the initiative to make an automated system for public as
+  well as private library owners to maintain their libraries efficiently with
+  minimum expenses and maximum profit returns.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  badges: ^1.2.0
+  charts_flutter: ^0.10.0
+  cupertino_icons: ^1.0.0
+  dio: ^3.0.10
+  dropdown_search: ^0.4.9
+  esc_pos_printer: ^4.0.3
+  expandable: ^4.1.4
+  flutter_calendar_carousel: ^1.4.12
+  flutter_circular_chart_two: ^0.1.2
+  flutter_multiselect: ^0.5.1
+  fluttertoast: ^7.1.8
+  http: ^0.12.2
+  image_picker: ^0.6.7+7
+  intl: ^0.17.0
+  liquid_progress_indicator: ^0.3.2
+  marquee_widget: ^1.0.0
+  multi_image_picker: ^4.8.0
+  otp: ^2.2.3
+  path_provider: ^2.0.1
+  percent_indicator: ^2.1.9+1
+  ping_discover_network: ^0.2.0+1
+  provider: ^5.0.0
+  qr_flutter: ^3.2.0
+  razorpay_flutter: ^1.2.2
+  shared_preferences: ^2.0.0
+  time_range_picker: ^1.1.1
+  timer_count_down: ^1.0.4+1
+  transparent_image: ^1.0.0
+  url_launcher: ^6.0.2
+  validators: ^2.0.1
+  wifi: ^0.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.7.5
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/owner_logo.png"
+
+flutter:
+  uses-material-design: true
+  #Assets
+  assets:
+    - assets/imgs/
+    - assets/gifs/
+
+  #Fonts
+  fonts:
+    - family: Great_Vibes
+      fonts:
+        - asset: assets/fonts/Great_Vibes.ttf
+    - family: Custom
+      fonts:
+        - asset: assets/customIcons/Custom.ttf

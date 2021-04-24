@@ -2,7 +2,13 @@
 A) Add file to "technical" folder
 
 2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
-A) 
+A) State Management is data initialization, 
+ it's manipulation, wether the data is mutable or immutable, and at last disposing 
+ it at the end of the flutter activity lifecycle. When talking about the data flow, all 
+ things are considered. Whether the data is being used in the same screen/activity or 
+ passed down to the childer widgets or sub screens, in other cases it could be used in 
+ the whole other widget tree not related to same parent widget.
 
 3. When/Where do you usually encounter bugs in your development process?
-A) 
+A) I occasionally encounter bugs in making the UI responsive to each device size. When
+ the keyboard appears on screen, or sometimes when one of the widget overflows due to less constraints.

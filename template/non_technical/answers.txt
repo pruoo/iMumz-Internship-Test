@@ -1,8 +1,10 @@
 1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
-A) 
+A) I follow Flutter channels/servers on Discord, Twitter and Youtube. As well as checking the documentation from time to time.
 
 2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
-A) 
+A) I use formatting, snippets, and pubspec assistant shortcuts in VSCode.
 
 3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
-A) 
+A) I generally use MediaQuery along with Expanded and flex properties if the screen doesn't have complex UI components. Making use of the
+ fractional part of the screen in sizing the widget and its children. As of now I am getting used to using the various types of widgets provided by Flutter UI Toolkit itself.
+ Such as the LayoutBuilder, FractionallySizedBox etc.
