@@ -1,0 +1,20 @@
+1. Attach a pubspec.yaml file from one of your past flutter projects.
+A) Added. Its from my 'TIFFINZO' projects, which you can also find in my resume.
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
+A) State management is mainly just keeping track of the values of different variables in the app and making sure that things are getting updated everywhere in the app
+where it is needed to. Some of the State management packages that I am familiar to are:
+Provider package: This is obviously the most used package in the flutter community when it comes to statemanagement coz its pretty simple to understand.
+BLoC: This is probably the most used package when it comes to medium to large scale apps. I haven't used it yet, but I attempted to learn it following a YouTube tutorial series on
+BLoC and Cubit.
+RiverPod: Apart from this i've been attempting to learn RiverPod, since I saw it getting popular in the community and its from the same creator as the Provider package.
+Where he's attempting to correct the problems faced in the Provider package.
+
+3. When/Where do you usually encounter bugs in your development process?
+A) A bug can pretty much lie anywhere in the project. One of the most difficult bug that I have ever encounter was actually related to the timezone,
+in my current internship, the previous interns didn't take care of handling the timezone when passing the DateTime variables to the backend.
+This later on caused a lot of issue when we encountered a problem where the connected data will get filtered out because difference in the LocalTime and the UTC.
+Later I had to fix the entire thing and code the things up in such a way that all the DateTime variables passing to the backend are sent as UTC and then they are converted to
+local time before getting used in the frontEnd.
+Apart from that, I usually find bugs on writing code for API Calls. For this, I use the app PostMan and always confirm the behaviour of the backend by making some POST and GET requests.
+Bugs are also found where some parameters becomes null on runtime, this can be avoided by using the ?. operator in flutter to check if its not null before accessing the property.
