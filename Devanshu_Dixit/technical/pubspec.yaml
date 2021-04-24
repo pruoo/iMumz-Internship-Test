@@ -1,0 +1,44 @@
+name: revapp
+description: A new Flutter project.
+
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.1
+  splashscreen:
+  firebase_core:
+  firebase_auth:
+  sms_autofill:
+  intl:
+  path_provider:
+  convex_bottom_bar:
+  provider:
+  google_maps_flutter:
+  geolocator:
+  flutter_polyline_points:
+  geocoding:
+  location:
+  google_maps_place_picker:
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - data/
+    - assets/destination_map_marker.png
+    - assets/driving_pin.png
+    - assets/friend1.jpg
+    - assets/friend2.jpg

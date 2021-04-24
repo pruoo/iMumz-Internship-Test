@@ -1,0 +1,9 @@
+1. Attach a pubspec.yaml file from one of your past flutter projects.
+A) Add file to "technical" folder
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
+A) StateManagement is often used to keep track of some data in the app that can or will change in future and then the ui have to rebuilt for that changes,
+    then for that I use provider for that.
+
+3. When/Where do you usually encounter bugs in your development process?
+A)  Usually I get bugs because of my own mistakes which I do while coding but then I debug them but besides that I most of the bugs are solved by just googling them.
