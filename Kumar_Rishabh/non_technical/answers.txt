@@ -1,0 +1,23 @@
+1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
+A)
+Reddit: Reddit is actually the most important source of news for Flutter for me. And not just the news but also what general opinion about it is
+in the industry, coz in the comment section you can find comments from all class of people and mostly more experienced ones who are actually
+working in the industry. Two of the subreddits that I am in are r/FlutterDev and r/FlutterHelp. It also comes in handy when I am stuck and need some help in my code.
+
+YouTube: Well of course, the official Flutter YouTube channel is the main source for any new package, widget or feature release. They even had the Event on the release of Flutter 2
+with null safety and stable Web app support. There are always updates on the channel and also the classic Boring flutter development show with Phillip.
+
+Discord: I am currently in two of the servers - AppBeweryFlutter and FlutterBuddies. The discord helped me a lot when I was got a bug in my current internship.
+
+Twitter: I currently follow few people on Twitter who I found from Medium article or YouTube.
+
+Medium: This is no doubt the best place to read article more technical topics.
+
+2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
+A) I use AndroidStudio for flutter development. I mostly just use the simple save (CTRL+S) and that also Hot Reloads the app. When it comes to Hot Restart, I just use mouse.
+Apart from that I use CTRL+SHIFT+M to toggle between the opening and closing brackets.
+
+3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
+A) Well in case of Flutter, getting responsiveness is much easier than say HTML/CSS. Just adjusting the properties like mainAxisAlignment, crossAxisAlignment for columns
+and rows. The EXPANDED widget together with the 'flex' properties also comes in handy. Apart from that in the worst cases we can use something like MediaQuery.of(context)
+to get the width and height and use it to set the size of containers or any other widget.
