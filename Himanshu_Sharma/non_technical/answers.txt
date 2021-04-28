@@ -1,16 +1,20 @@
 1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
-A) 
+A) I stay updated about the latest news and topics about Flutter via Twitter, Discord Community Servers, and Online Conferences.
+I have subscribed to flutter releases, I follow a few GitHub issues with a few packages that I have worked with.
 
 2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
-A) My most used IDE or Code Editior: VS Code. Most used keyboard shortcuts:
-Ctrl + D: selecting multiple item with similar signature
+A) My most used IDE or Code Editor: VS Code. Most used keyboard shortcuts:
+Ctrl + D: selecting multiple items with similar signature
 Shift + Alt + F: Code Formatter
 F1: Using Pubspec Assist and FVM
 Ctrl + `: Open Terminal
+Ctrl + .: Open Suggestions
+F5: Debug Code
 
 3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
 A) I will consider Flutter Web for this question. I can either use LayoutBuilder or MediaQuery.of() to create the responsive UI.
-I personally prefer LayoutBuilder widget, and for the responsive UI, I will create a whole ResponsiveLayout and use it in the Widget Tree.
+For the responsive UI, I will create a whole ResponsiveLayout Widget using both the LayoutBuilder and MediaQuery.of(). 
+The static methods here can be used to check the current layout at any instance.
 
 class ResponsiveLayout extends StatelessWidget {
   const ResponsiveLayout({required this.largeScreen, required this.smallScreen})
@@ -49,7 +53,7 @@ class ResponsiveLayout extends StatelessWidget {
   }
 }
 
-This is how I'll use the class:
+This is how I'll use it in the Widget Tree:
 
 class Dashboard extends StatelessWidget {
   @override
