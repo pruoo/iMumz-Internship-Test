@@ -1,0 +1,62 @@
+1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
+A) 
+
+2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
+A) My most used IDE or Code Editior: VS Code. Most used keyboard shortcuts:
+Ctrl + D: selecting multiple item with similar signature
+Shift + Alt + F: Code Formatter
+F1: Using Pubspec Assist and FVM
+Ctrl + `: Open Terminal
+
+3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
+A) I will consider Flutter Web for this question. I can either use LayoutBuilder or MediaQuery.of() to create the responsive UI.
+I personally prefer LayoutBuilder widget, and for the responsive UI, I will create a whole ResponsiveLayout and use it in the Widget Tree.
+
+class ResponsiveLayout extends StatelessWidget {
+  const ResponsiveLayout({required this.largeScreen, required this.smallScreen})
+      : mediumScreen = largeScreen;
+
+  final Widget largeScreen;
+  final Widget mediumScreen;
+  final Widget smallScreen;
+
+  static bool isSmallScreen(BuildContext context) {
+    return MediaQuery.of(context).size.width <= 768;
+  }
+
+  static bool isMediumScreen(BuildContext context) {
+    return MediaQuery.of(context).size.width > 768 &&
+        MediaQuery.of(context).size.width <= 1036;
+  }
+
+  static bool isLargeScreen(BuildContext context) {
+    return MediaQuery.of(context).size.width > 1036;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) {
+        if (constraints.maxWidth > 1036) {
+          return largeScreen;
+        } else if (constraints.maxWidth < 1036 && constraints.maxWidth > 768) {
+          return mediumScreen;
+        } else {
+          return smallScreen;
+        }
+      },
+    );
+  }
+}
+
+This is how I'll use the class:
+
+class Dashboard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ResponsiveLayout(
+      largeScreen: DesktopWidget(), // Desktop View
+      smallScreen: MobileWidget(), // Mobile View
+    );
+  }
+}
