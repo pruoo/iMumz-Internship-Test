@@ -1,0 +1,10 @@
+1. Attach a pubspec.yaml file from one of your past flutter projects.
+A) File added.
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
+A) Before State Management, you need to understand what is State? The State in simplest terms is the value of variables at any instant of the lifecycle of the app, which affects what is shown to the user and how the application will behave.
+State management is the management of these values while making sure the application reacts to the changes in state efficiently. Flutter gives us tools like StatefullWidget + setState and Streams to work with states. 
+Also, various 3rd party packages give us opinionated ways for state management by wrapping around the basic APIs.
+
+3. When/Where do you usually encounter bugs in your development process?
+A) I usually encounter bugs with packages that I have never used, when caught, it presents me with learning opportunities.
