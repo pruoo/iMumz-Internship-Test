@@ -1,0 +1,153 @@
+name: gitgram
+description: A social media app like instagram, but for developers
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  # Critical
+  firebase_storage: ^3.1.6
+  cloud_firestore: ^0.13.6
+
+  # Used for handling cached images from network
+  cached_network_image: ^2.2.0+1
+
+  # Used for converting TimeStamp into human-readable strings
+  timeago:
+    path: ./lib/packages/timeago
+
+  # Used in Post Text to highlight any links, if exist
+  flutter_linkify: ^3.1.3
+
+  # Used for launching URLs
+  url_launcher: ^5.5.0
+
+  # Used for panning, zooming images in full-screen
+  photo_view:
+    git:
+      url: https://github.com/fireslime/photo_view.git
+      ref: master
+  # Used for displaying a slider of images in gallery and multi-image post
+  carousel_slider: ^2.2.1
+
+  # Used for checking device internet connectivity status
+  connectivity: ^0.4.9+2
+
+  # Used to manage state
+  provider: ^4.3.2+1
+
+  # Used for achieving instagram like scrolling dots in multi image post
+  smooth_page_indicator: ^0.2.0
+
+  # Used for adding rich text support
+  # zefyr:
+  #   path: ./lib/packages/zefyr
+
+  # Used for adding rich text support documents
+  notus: ^0.1.0
+
+  # Used for playing self-hosted videos
+  cached_video_player: ^1.0.3
+
+  # Used for previewing PDFs
+  pdf_flutter:
+    path: ./lib/packages/pdf_flutter
+
+  # Used for playing embedded youtube videos
+  youtube_player_flutter: ^7.0.0+7
+
+  # Used for picking up images for new posts
+  multi_image_picker: ^4.6.7
+
+  # Used for picking video file
+  file_picker: ^1.12.0
+
+  # Used For generating thumbnails for selected video
+  video_thumbnail: ^0.2.2
+
+  # Used for adding page navigation transitions
+  page_transition: ^1.1.6
+
+  # Used for generating unique String IDs
+  uuid: ^2.2.0
+
+  # Used for rendering uploading animations
+  lottie: ^0.6.0
+
+  # Mainly used for validating URLs
+  string_validator: ^0.1.4
+
+  # Used for parsing metadata for link previews
+  html: ^0.14.0+3
+
+  # Used for compressing selected images, before uploading
+  flutter_image_compress: ^0.7.0
+
+  # Used for adding lazy loading listview effect
+  shimmer: ^1.1.1
+
+  # To display an overlay indicator for selected groups, when there is not enough space
+  overflow_view: ^0.2.1
+
+  # To Easily Restart the app, when comments are refreshed
+  flutter_phoenix: ^0.1.0
+
+  # Used for displaying snackbar without Scaffold context
+  flushbar: ^1.10.4
+
+  # Used for preventing screenshots capture on android
+  flutter_windowmanager: ^0.0.2
+
+  # Used for custom webviews
+  # webview_flutter: ^0.3.22+1
+  webview_flutter: ^1.0.1
+
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.3
+  flutter_slidable: ^0.5.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png
+    - assets/user.png
+    - assets/lottie/
+
+  fonts:
+    - family: Jost
+      fonts:
+        - asset: fonts/Jost-200-Thin.ttf
+          weight: 200
+        - asset: fonts/Jost-200-ThinItalic.ttf
+          style: italic
+          weight: 200
+        - asset: fonts/Jost-400-Book.ttf
+          weight: 400
+        - asset: fonts/Jost-400-BookItalic.ttf
+          style: italic
+          weight: 400
+        - asset: fonts/Jost-500-Medium.ttf
+          weight: 500
+        - asset: fonts/Jost-500-MediumItalic.ttf
+          style: italic
+          weight: 500
+        - asset: fonts/Jost-600-Semi.ttf
+          weight: 600
+        - asset: fonts/Jost-600-SemiItalic.ttf
+          style: italic
+          weight: 600
+        - asset: fonts/Jost-700-Bold.ttf
+          weight: 700
+        - asset: fonts/Jost-700-BoldItalic.ttf
+          style: italic
+          weight: 700
