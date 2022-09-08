@@ -6,3 +6,6 @@ A)
 
 3. When/Where do you usually encounter bugs in your development process?
 A) 
+
+How important is it to keep the code readable and clean? What best prctices do you follow for structuring and writing code so that it is easy to read?
+A)
