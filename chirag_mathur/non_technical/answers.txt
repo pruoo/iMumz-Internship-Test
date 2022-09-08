@@ -1,0 +1,53 @@
+1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
+A) I am in the Discord Servers of FlutterDev and Codepur, there is also a public group of Flutter in Telegram where people post their queries, I also post my queries and try to solve problems of other people which results in a healthy discussion and it also help me to stay updated about new features. Other than that I follow Pawan Kumar, r/FlutterDev, etc. on twitter to keep me updated.
+
+2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
+A) Some of my mostly used shortcuts for Flutter are F5 for Start with Debugging mode, Ctrl + Space is a time saviour for me which gives me auto recommendations and Ctrl + . for quick fix.
+
+3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
+A) While coding an entire screen, my first process it to break the screen into smaller components as much it is possible, as modulariy is the key for making the app/website responsive as we can use the same widget for mobile/tab/desktop. I use MediaQuery.of() when there is samll changes in the screen size, but for making the application work on different gadgets, I use a different file(attatching the code below) and based on that I make changes in widgets used like for mobile we use Appbar and for desktop we use Navigation Bar.
+
+Code:-
+
+import 'package:flutter/material.dart';
+
+class ResponsiveWidget extends StatelessWidget {
+  final Widget largeScreen;
+  final Widget mediumScreen;
+  final Widget smallScreen;
+
+  const ResponsiveWidget(
+      {Key key,
+      @required this.largeScreen,
+      this.mediumScreen,
+      this.smallScreen})
+      : super(key: key);
+
+  static bool isSmallScreen(BuildContext context) {
+    return MediaQuery.of(context).size.width < 800;
+  }
+
+  static bool isLargeScreen(BuildContext context) {
+    return MediaQuery.of(context).size.width > 800;
+  }
+
+  static bool isMediumScreen(BuildContext context) {
+    return MediaQuery.of(context).size.width >= 800 &&
+            MediaQuery.of(context).size.width <= 1200;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 1200) {
+          return largeScreen;
+        } else if (constraints.maxWidth <= 1200 && constraints.maxWidth >= 800) {
+          return mediumScreen ?? largeScreen;
+        } else {
+          return smallScreen ?? largeScreen;
+        }
+      },
+    );
+  }
+}
