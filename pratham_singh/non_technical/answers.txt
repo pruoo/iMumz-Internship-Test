@@ -1,0 +1,28 @@
+1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
+A) i) Discord: I am a part of some Discord channels dedicated to Flutter. The Flutter India Community Channel and the London App Brewery Flutter Channel on discord help me to find inspiration for new projects.
+ii) YouTube: I follow the official Flutter YouTube channel to check updates about Flutter. Apart from that, I follow channels like The Flutter Way, mtechviral, and Kalle Hallden to learn more about Flutter.
+iii) Medium: I actively follow the Flutter Community on Medium which has amazing write-ups related to Flutter and Dart.
+
+
+2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
+A) These are my most used IDE shortcuts:
+i. Command + S : To hot reload and to format the code automatically
+ii. Alt + Enter : To open the context actions of a particular widget in a dropdown. (Lets you wrap it with other widgets like Center, Padding, Container etc.)
+iii. stless/stful : To create a Stateless (stless) or Stateful (stful) widget quickly without writing code to define widgets every time.
+
+3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
+A) There are two ways I approach responsiveness when coding in Flutter:
+
+i. When coding for Flutter Web:
+Writing code for Flutter Web requires us to code the app for a variety of device sizes which might be desktops, tablets or mobiles.
+I create and a file called responsive.dart that contains the class Responsive which is responsible for handling the app for change in screen size.
+I use the Responsive class and its functions in the app wherever necessary.
+Typically, a Flutter Web app might also require coding entire screens differently for desktops and mobile/tablets and I do that when it is necessary.
+
+ii. When coding for different mobile screen size for an app:
+This is comparatively easier as the change in size is much less as compared to the above case.
+I use LayoutBuilder and MediaQuery to get information from the device to build responsive UI.
+This includes the height/width of the screen or the orientation of the device which help me to code the app with respect to the device and not with hard-coded values which may cause errors.
+Along with this, different widgets like Flexible, Expanded, Flex, Wrap, etc. to paint the widgets as ratios and not define them absolutely.
+
+
