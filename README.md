@@ -5,7 +5,7 @@
 
 # What's next?
 In order to move a step closer to this opportunity, you will have to complete the following tasks mentioned and submit a PR to this repository.
-First, clone this repository using `git clone git@github.com:pruoo/iMumz_Summer-Internship-2021.git` or download zip.
+First, clone this repository or download Zip.
 Then, duplicate the `template` folder and change the folder name to your full name (use_snake_case)
 You will find 2 `answers.txt` files, one in each folder `technical` and `non_technical`. Edit these files to respond with your answers.
 For the coding task, you can navigate to the `coding_tasks` folder, and run `flutter create .` to initialize a Flutter app. Attach screenshots of the UI in the comment of the PR.
