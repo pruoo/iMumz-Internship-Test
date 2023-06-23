@@ -1,0 +1,15 @@
+1. Attach a pubspec.yaml file from one of your past flutter projects.
+A) Added file to "technical" folder.
+
+2. What is your understanding of the term “State Management” when talking about Flutter App Development. Explain it in your own words.
+A) Honestly, It's not as complicated as people think it to be. To answer on how to manage this, Let's first understand what's exactly 'state'.
+
+You can imagine state of an app as the output of that app/widget on the basis of some particular data, or a variable let's suppose. For example, In case someone tries to open your app and you want to display a login page to the user, in case they aren't logged in and display a dashboard instead, when they are logged in. Here the boolean condition whether a user is logged in or not can be referred to as state of that widget.
+
+
+Efficiently managing multiple 'state variables' in an app, is known as state management. In flutter, we have a lot of options using which we can manage state including Stateful Widget, Streams, NotificationListener etc.
+
+Also, there are lots of 3rd party packages developed by people in flutter community that help in managing state in their own opinionated ways. For example : Provider, Riverpod, BLOC, mobx etc.
+
+3. When/Where do you usually encounter bugs in your development process?
+A) Recently, I've been encountering bugs after addition of null safety in dart, a lot of times many older packages that I worked with previosuly haven't been migrated to null safety, but It gives me the opportunity to contribute to the community by helping those package maintainers to migrate to null safety.

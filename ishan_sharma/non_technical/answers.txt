@@ -1,0 +1,33 @@
+1. How do you stay updated about topics in Flutter/Dart and active in the community? (Discord/Slack/MeetUps/Twitter)
+A) I'm an active contributor to the flutter community, and a co-organizer at Flutter India, I mostly stay updated about latest topics through our community's discord servers, TheFlutterCommunity Slack & Discor, Online confrences, the boring flutter development show by Filip & most importantly Twitter.
+Also, I do often contribute to the official flutter project, by either filing issues/proposals, investigating bugs etc.
+
+2. Your most used IDE/keyboard shortcuts when coding. (for Flutter/Dart)
+A) That's an interesting one :) . I mostly use VSCode for working with Flutter. Here are some of the shortcuts I use:
+Ctrl + Shift + P : Create new flutter Project, Pubspec assist, FVM
+Alt + Shift + F  : Code formatter
+Ctrl + ` : Terminal
+F5 : To run the app in debug mode
+Ctrl + . : Suggestions for wrapping/extracting widgets etc.
+
+
+3. How do you approach responsiveness when coding an entire screen? (You can attach code snippet for better explanation).
+A) There are multiple ways with which I tackle this, In most of the cases It can be done by just using MediaQuery paired with Flex or Expanded, wherever feasible. This helps to always maintain a similar layout across different screens.
+
+However, In cases where I have to change the layout of a screen with regards to the screen size, I prefer to use LayoutBuilder widget. For example : Let's say I'm making a dashboard using Flutter web, and I want to show a left sidebar when someone visits a page on the web, and show a bottom navigation bar when it's on a smaller screen like mobile.
+
+
+/*        CODE SAMPLE           */
+
+@override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraint) {
+
+        if (constraint.maxWidth > 768) return tabletOrDesktopLayout;
+        
+        else return mobileLayout;
+        
+      },
+    );
+  }
